@@ -218,10 +218,6 @@ body {
 
 .cyberpunk {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.22),
-      rgba(0, 0, 0, 0.38)
-    ),
     url("assets/images/Cyberpunk Cover.jpg");
 
   background-size: cover;
@@ -231,10 +227,6 @@ body {
 
 .fantasy {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.22),
-      rgba(0, 0, 0, 0.38)
-    ),
     url("assets/images/2 cover fantasy desktop.jpg");
 
   background-size: cover;
@@ -244,10 +236,6 @@ body {
 
 .chill {
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.22),
-      rgba(0, 0, 0, 0.38)
-    ),
     url("assets/images/COVER PORT CHILL DESKTOP.jpg");
 
   background-size: cover;
