@@ -391,5 +391,11 @@ body {
   .samply-wrapper iframe {
     height: 650px;
   }
-
+.page-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 30px auto 80px;
+}
 }
