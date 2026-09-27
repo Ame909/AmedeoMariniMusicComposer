@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 70% 0%, #35121b 0%, transparent 35%),
+    linear-gradient(135deg, #050505, #110707 60%, #160b0e);
+
+  color: white;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  min-height: 100vh;
+}
+
+
+
+/* -------------------- */
+/* LANDING PAGE */
+/* -------------------- */
+
+.landing {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.intro {
+  margin-bottom: 60px;
+}
+
+.intro h1 {
+  margin: 0;
+
+  font-size: clamp(38px, 7vw, 80px);
+  letter-spacing: -2px;
+
+  font-weight: 700;
+}
+
+.intro p {
+  margin-top: 10px;
+
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+
+/* -------------------- */
+/* BIG PORTFOLIO BUTTONS */
+/* -------------------- */
+
+.portfolio-buttons {
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+.portfolio-button {
+  position: relative;
+
+  width: 100%;
+  height: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  background:
+    linear-gradient(
+      110deg,
+      #141414,
+      #2b0c10
+    );
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    filter 0.25s ease;
+}
+
+.portfolio-button span {
+  position: relative;
+  z-index: 2;
+
+  font-size: clamp(25px, 4vw, 48px);
+
+  font-weight: 700;
+  letter-spacing: -1px;
+
+  padding: 18px 25px;
+
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.portfolio-button::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.45;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.08),
+      transparent 30%,
+      rgba(120, 0, 20, 0.3)
+    );
+
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-button:hover {
+  transform: scale(1.015);
+
+  border-color: rgba(255, 255, 255, 0.4);
+
+  filter: brightness(1.15);
+}
+
+.portfolio-button:hover::before {
+  opacity: 0.8;
+}
+
+
+/* slightly different vibes for now */
+
+.cyberpunk {
+  background:
+    linear-gradient(
+      100deg,
+      #07151d,
+      #30070e,
+      #100509
+    );
+}
+
+.fantasy {
+  background:
+    linear-gradient(
+      100deg,
+      #141407,
+      #173020,
+      #081815
+    );
+}
+
+.chill {
+  background:
+    linear-gradient(
+      100deg,
+      #0c1020,
+      #161627,
+      #08090f
+    );
+}
+
+
+
+/* -------------------- */
+/* SUBPAGE HEADER */
+/* -------------------- */
+
+.page-header {
+  width: min(1100px, 90%);
+
+  margin: 0 auto;
+
+  padding: 30px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-button {
+  color: white;
+
+  text-decoration: none;
+
+  padding: 13px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  background: rgba(255, 255, 255, 0.04);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.small-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+
+
+/* -------------------- */
+/* CONTENT PAGES */
+/* -------------------- */
+
+.content-page {
+  width: min(1000px, 90%);
+
+  margin: 0 auto;
+
+  padding-bottom: 120px;
+}
+
+.page-title {
+  margin: 60px 0 50px;
+}
+
+.page-title p {
+  color: rgba(255, 255, 255, 0.45);
+
+  text-transform: uppercase;
+
+  letter-spacing: 4px;
+
+  font-size: 12px;
+}
+
+.page-title h1 {
+  margin: 10px 0 0;
+
+  font-size: clamp(38px, 7vw, 75px);
+
+  letter-spacing: -2px;
+}
+
+
+
+/* -------------------- */
+/* VIDEO */
+/* -------------------- */
+
+.video-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  padding-top: 56.25%;
+
+  margin-bottom: 45px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* -------------------- */
+/* SAMPLY */
+/* -------------------- */
+
+.samply-wrapper {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.samply-wrapper iframe {
+  width: 100%;
+
+  height: 600px;
+
+  display: block;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+
+@media (max-width: 700px) {
+
+  .landing {
+    padding-top: 50px;
+  }
+
+  .portfolio-button {
+    height: 150px;
+  }
+
+  .page-header {
+    gap: 10px;
+  }
+
+  .small-button {
+    padding: 11px 14px;
+    font-size: 14px;
+  }
+
+  .samply-wrapper iframe {
+    height: 650px;
+  }
+
+}
