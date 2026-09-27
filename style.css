@@ -147,35 +147,42 @@ body {
 /* slightly different vibes for now */
 
 .cyberpunk {
-  background:
+  background-image:
     linear-gradient(
-      100deg,
-      #07151d,
-      #30070e,
-      #100509
-    );
+      rgba(0, 0, 0, 0.22),
+      rgba(0, 0, 0, 0.38)
+    ),
+    url("assets/images/Cyberpunk Cover.jpg");
+
+  background-size: cover;
+  background-position: center;
 }
+
 
 .fantasy {
-  background:
+  background-image:
     linear-gradient(
-      100deg,
-      #141407,
-      #173020,
-      #081815
-    );
+      rgba(0, 0, 0, 0.22),
+      rgba(0, 0, 0, 0.38)
+    ),
+    url("assets/images/2 cover fantasy desktop.jpg");
+
+  background-size: cover;
+  background-position: center;
 }
+
 
 .chill {
-  background:
+  background-image:
     linear-gradient(
-      100deg,
-      #0c1020,
-      #161627,
-      #08090f
-    );
-}
+      rgba(0, 0, 0, 0.22),
+      rgba(0, 0, 0, 0.38)
+    ),
+    url("assets/images/COVER PORT CHILL DESKTOP.jpg");
 
+  background-size: cover;
+  background-position: center;
+}
 
 
 /* -------------------- */
