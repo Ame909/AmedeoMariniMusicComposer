@@ -177,7 +177,7 @@ body {
 }
 
 
-.portfolio-button::before {
+ /* .portfolio-button::before {
   content: "";
 
   position: absolute;
@@ -209,7 +209,7 @@ body {
 .portfolio-button:hover::before {
   opacity: 0.8;
 }
-
+*/
 
 
 /* -------------------- */
