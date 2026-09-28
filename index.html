@@ -148,11 +148,34 @@
 
 
   <script>
-    function copyDiscord() {
-      navigator.clipboard.writeText("@amepulses");
-      alert("Discord username copied: @amepulses");
-    }
-  </script>
+  function copyDiscord() {
+    navigator.clipboard.writeText("@amepulses");
+    alert("Discord username copied: @amepulses");
+  }
+
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      isOpen
+    );
+  });
+
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+    });
+  });
+</script>
 
 </body>
 </html>
