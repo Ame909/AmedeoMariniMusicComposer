@@ -72,12 +72,12 @@ a {
 }
 
 .footer-social-links {
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 }
 
 .footer-social-links .social-button {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
 }
 
 .footer-social-links .social-button img {
@@ -201,18 +201,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 190px;
-  height: 96px;
+  width: 205px;
+  height: 100px;
   flex-shrink: 0;
   overflow: hidden;
 }
 
 .site-logo img {
   display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 92px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -461,20 +459,19 @@ a {
 
 .home-contact {
   width: min(1100px, 90%);
-  margin: 40px auto 90px;
-  padding-top: 30px;
+  margin: 10px auto 70px;
+  padding-top: 0;
 }
 
 .contact-details {
   width: min(700px, 100%);
-  margin: 0 auto 28px;
-  padding: 20px;
+  margin: 0 auto 24px;
+  padding: 6px 20px 12px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.22);
 }
 
 .contact-details p {
-  margin: 7px 0;
+  margin: 4px 0;
 }
 
 .contact-details a,
