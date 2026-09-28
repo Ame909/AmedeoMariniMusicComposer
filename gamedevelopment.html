@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fantasy & Epic — Amedeo Marini</title>
+  <title>Game Development & Audio Implementation — Amedeo Marini</title>
   <link rel="stylesheet" href="style.css?v=5">
 </head>
-<body>
+<body class="game-dev-page">
   <header class="site-header">
     <a href="index.html" class="site-logo">
       <img src="assets/images/AM-logo-header.png" alt="Amedeo Marini Music">
@@ -15,7 +15,7 @@
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="gamedevelopment.html">Game Development</a>
+      <a href="gamedevelopment.html" class="active">Game Development</a>
       <button type="button" class="contact-trigger">Get in Touch</button>
     </nav>
 
@@ -30,28 +30,31 @@
     <a href="gamedevelopment.html">Game Development</a>
     <button type="button" class="contact-trigger">Get in Touch</button>
   </div>
-  <header class="page-header">
-    <a href="index.html" class="small-button">← Back to Lobby</a>
-    <button type="button" class="small-button contact-trigger">Get in Touch</button>
-  </header>
-  <main class="content-page">
-    <div class="page-title"><p>Selected Work</p><h1>FANTASY — EPIC</h1></div>
-    <div class="samply-wrapper"><iframe src="https://samply.app/embed/1ae9026b-baf8-48e5-8c8a-f583bc6e3b21" frameborder="0" allowtransparency="true"></iframe></div>
-    <div class="page-social-links">
-      <a href="https://www.youtube.com/@Ame_OST" target="_blank" rel="noopener noreferrer" class="social-button" title="YouTube">
-        <img src="assets/images/Youtube_logo.png" alt="YouTube">
-      </a>
-      <a href="https://www.instagram.com/amedeomarini_music/" target="_blank" rel="noopener noreferrer" class="social-button" title="Instagram">
-        <img src="assets/images/Instagram-Icon.png" alt="Instagram">
-      </a>
-      <button type="button" class="social-button" data-copy-discord title="Copy Discord username">
-        <img src="assets/images/dcord icon.png" alt="Discord">
-      </button>
-      <a href="mailto:hello@amedeomarini.com" class="social-button" title="Email">
-        <img src="assets/images/email icon no bg.png" alt="Email">
-      </a>
+
+  <section class="game-dev-intro">
+    <div class="game-dev-intro-inner">
+      <h1>Game Development &amp;<br>Audio Implementation</h1>
+      <p>Towards the end of 2024, I picked up Unreal Engine development with more than just audio implementation in mind, and started brushing up on my C++ skills to refine my game development toolkit. Since then I got the opportunity to work on a few game projects with some amazing people, both as composer and developer, guiding audio implementation as well as composing some music.</p>
     </div>
-  </main>
+  </section>
+
+  <div class="game-divider" aria-hidden="true"></div>
+
+  <section class="game-project">
+    <div class="game-project-inner">
+      <div class="game-project-media">
+        <img src="assets/images/Lumen Bear.jpeg" alt="Luminbear game artwork">
+        <a class="project-button" href="#" aria-disabled="true" title="Game link to be added">Play for Free</a>
+      </div>
+
+      <div class="game-project-copy">
+        <h2>Luminbear</h2>
+        <h3>Lead Gameplay Programmer</h3>
+        <p>Luminbear is a magical puzzle platformer adventure developed in two weeks for thatgamejam. The game received praise by various high-profile individuals in the industry. I coordinated all gameplay development together with our project lead Adam Villareal. I assisted the other composer with music implementation, improving MetaSounds. I also composed the “Luminball” and outro cutscene music.</p>
+      </div>
+    </div>
+  </section>
+
   <div class="contact-modal" id="contactModal" hidden>
     <div class="contact-modal-panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
       <button type="button" class="contact-modal-close" data-close-contact aria-label="Close contact options">×</button>

@@ -1,249 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>About — Amedeo Marini</title>
-
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
-
-
 <body>
-
-  <!-- HEADER -->
-
   <header class="site-header">
-
     <a href="index.html" class="site-logo">
-      <img
-        src="assets/images/AM-logo.png"
-        alt="Amedeo Marini Music"
-      >
+      <img src="assets/images/AM-logo-header.png" alt="Amedeo Marini Music">
     </a>
 
-
-    <nav class="desktop-nav">
+    <nav class="desktop-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html" class="active">About</a>
       <a href="gamedevelopment.html">Game Development</a>
-      <a href="mailto:amarini.music@gmail.com">Get in Touch</a>
+      <button type="button" class="contact-trigger">Get in Touch</button>
     </nav>
 
-
-    <button
-      class="menu-toggle"
-      id="menuToggle"
-      aria-label="Open menu"
-      aria-expanded="false"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
     </button>
-
   </header>
 
-
-  <!-- MOBILE MENU -->
-
   <div class="mobile-menu" id="mobileMenu">
-
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="gamedevelopment.html">Game Development</a>
-    <a href="mailto:amarini.music@gmail.com">Get in Touch</a>
-
+    <button type="button" class="contact-trigger">Get in Touch</button>
   </div>
-
-
-  <!-- ABOUT -->
-
   <main class="content-page">
-
     <div class="page-title">
-
       <p>About</p>
-
       <h1>ABOUT ME</h1>
-
     </div>
-
 
     <div class="about-text">
-
-      <p>
-        As a multidisciplinary soundsmith, I’ve spent the past seven years
-        blurring the boundaries between composer and music producer in an
-        ever-evolving entertainment landscape, both writing music and
-        working as a tutor and performing artist.
-      </p>
-
-
-      <p>
-        Blending the clarity of orchestral cinema with bespoke sound design,
-        I constantly seek to craft music that elevates games and visual media,
-        making sound and story feel like two sides of the same coin.
-      </p>
-
-
-      <p>
-        I believe that any great soundtrack begins with the composer truly
-        understanding the developer’s or director’s intention, embracing the
-        shared goal of bringing ideas to sound in a perfect blend. Therefore,
-        I value great communication throughout the process.
-      </p>
-
-
-      <p>
-        I am currently scoring a short film and slowly working on the
-        soundtrack for an unannounced video game project, but I am open to
-        taking on more work. No budget or project is too small; I like to
-        find a compromise that works for everyone.
-      </p>
-
-
-      <p>
-        Don’t hesitate to get in touch, and thank you for being here!
-      </p>
-
-
+      <p>As a multidisciplinary soundsmith, I’ve spent the past seven years blurring the boundaries between composer and music producer in an ever-evolving entertainment landscape, both writing music and working as a tutor and performing artist.</p>
+      <p>Blending the clarity of orchestral cinema with bespoke sound design, I constantly seek to craft music that elevates games and visual media, making sound and story feel like two sides of the same coin.</p>
+      <p>I believe that any great soundtrack begins with the composer truly understanding the developer’s or director’s intention, embracing the shared goal of bringing ideas to sound in a perfect blend. Therefore, I value great communication throughout the process.</p>
+      <p>I am currently scoring a short film and slowly working on the soundtrack for an unannounced video game project, but I am open to taking on more work. No budget or project is too small; I like to find a compromise that works for everyone.</p>
+      <p>Don’t hesitate to get in touch, and thank you for being here!</p>
       <br>
-
-
-      <p>
-        <strong>Some of my favorite game and film soundtracks:</strong>
-      </p>
-
-
-      <p>
-        — Furi (Game)<br>
-        — The Witcher 3 (Game)<br>
-        — Frostpunk (Game)<br>
-        — Cyberpunk 2077 (Game)
-      </p>
-
-
-      <p>
-        — The Prestige (Film)<br>
-        — The Sandman (TV Show)<br>
-        — Succession (TV Show)<br>
-        — Anything by Ennio Morricone (Film)<br>
-        — Dune Part Two (Film)
-      </p>
-
+      <p><strong>Some of my favorite game and film soundtracks:</strong></p>
+      <p>— Furi (Game)<br>— The Witcher 3 (Game)<br>— Frostpunk (Game)<br>— Cyberpunk 2077 (Game)</p>
+      <p>— The Prestige (Film)<br>— The Sandman (TV Show)<br>— Succession (TV Show)<br>— Anything by Ennio Morricone (Film)<br>— Dune Part Two (Film)</p>
     </div>
-
-
-    <!-- SOCIAL LINKS -->
 
     <div class="page-social-links">
-
-      <a
-        href="https://www.youtube.com/@Ame_OST"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="social-button"
-        title="YouTube"
-      >
-        <img
-          src="assets/images/Youtube_logo.png"
-          alt="YouTube"
-        >
+      <a href="https://www.youtube.com/@Ame_OST" target="_blank" rel="noopener noreferrer" class="social-button" title="YouTube">
+        <img src="assets/images/Youtube_logo.png" alt="YouTube">
       </a>
-
-
-      <a
-        href="https://www.instagram.com/amedeomarini_music/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="social-button"
-        title="Instagram"
-      >
-        <img
-          src="assets/images/Instagram-Icon.png"
-          alt="Instagram"
-        >
+      <a href="https://www.instagram.com/amedeomarini_music/" target="_blank" rel="noopener noreferrer" class="social-button" title="Instagram">
+        <img src="assets/images/Instagram-Icon.png" alt="Instagram">
       </a>
-
-
-      <button
-        class="social-button"
-        onclick="copyDiscord()"
-        title="Copy Discord username"
-      >
-        <img
-          src="assets/images/dcord icon.png"
-          alt="Discord"
-        >
+      <button type="button" class="social-button" data-copy-discord title="Copy Discord username">
+        <img src="assets/images/dcord icon.png" alt="Discord">
       </button>
-
-
-      <a
-        href="mailto:amarini.music@gmail.com"
-        class="social-button"
-        title="Email"
-      >
-        <img
-          src="assets/images/email icon no bg.png"
-          alt="Email"
-        >
+      <a href="mailto:hello@amedeomarini.com" class="social-button" title="Email">
+        <img src="assets/images/email icon no bg.png" alt="Email">
       </a>
-
     </div>
-
   </main>
-
-
-  <script>
-
-    function copyDiscord() {
-      navigator.clipboard.writeText("@amepulses");
-      alert("Discord username copied: @amepulses");
-    }
-
-
-    const menuToggle =
-      document.getElementById("menuToggle");
-
-    const mobileMenu =
-      document.getElementById("mobileMenu");
-
-
-    menuToggle.addEventListener("click", () => {
-
-      const isOpen =
-        mobileMenu.classList.toggle("open");
-
-      menuToggle.setAttribute(
-        "aria-expanded",
-        isOpen
-      );
-
-    });
-
-
-    mobileMenu
-      .querySelectorAll("a")
-      .forEach(link => {
-
-        link.addEventListener("click", () => {
-
-          mobileMenu.classList.remove("open");
-
-          menuToggle.setAttribute(
-            "aria-expanded",
-            "false"
-          );
-
-        });
-
-      });
-
-  </script>
-
+  <div class="contact-modal" id="contactModal" hidden>
+    <div class="contact-modal-panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+      <button type="button" class="contact-modal-close" data-close-contact aria-label="Close contact options">×</button>
+      <h2 id="contactModalTitle">Get in Touch</h2>
+      <p>Choose the quickest way to reach me.</p>
+      <div class="contact-options">
+        <a class="contact-option" href="mailto:hello@amedeomarini.com">Email</a>
+        <button type="button" class="contact-option" data-copy-discord>Discord</button>
+      </div>
+    </div>
+  </div>
+  <script src="site.js?v=5"></script>
 </body>
-
 </html>
