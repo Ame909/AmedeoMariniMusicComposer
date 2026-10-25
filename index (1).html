@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amedeo Marini — Composer</title>
+  <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <a href="index.html" class="site-logo">
+      <img src="assets/images/AM-logo.png" alt="Amedeo Marini Music">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="gamedevelopment.html">Game Development</a>
+      <button type="button" class="contact-trigger">Get in Touch</button>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gamedevelopment.html">Game Development</a>
+    <button type="button" class="contact-trigger">Get in Touch</button>
+  </div>
+
+  <main class="landing">
+    <div class="intro">
+      <h1>AMEDEO MARINI</h1>
+      <p>Composer for games and interactive media</p>
+    </div>
+
+    <section class="featured-music" aria-labelledby="featuredMusicTitle">
+      <p class="featured-label" id="featuredMusicTitle">Featured Game Music</p>
+
+      <div class="featured-carousel" id="featuredCarousel" tabindex="0" aria-label="Featured game music carousel">
+        <button class="carousel-arrow carousel-arrow-left" type="button" data-carousel-prev aria-label="Previous featured video">‹</button>
+
+        <div class="carousel-stage">
+          <article class="carousel-slide" data-carousel-slide data-title="Legends of The Verdant Front — Ironfront Express">
+            <div class="carousel-video">
+              <iframe
+                src="https://player.vimeo.com/video/1221104346?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                title="Legends of The Verdant Front - Ironfront Express OST - Amedeo Marini"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+
+          <article class="carousel-slide" data-carousel-slide data-title="HellPunk: Purgatorium">
+            <div class="carousel-video">
+              <iframe
+                src="https://player.vimeo.com/video/1239229435?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                title="HellPunk: Purgatorium - Gameplay Snippet with music"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+
+          <article class="carousel-slide" data-carousel-slide data-title="Ironfront Express — Gameplay Music">
+            <div class="carousel-video">
+              <iframe
+                src="https://www.youtube.com/embed/N-fIZf8-gEE?si=OeRXZZrayePtnw5Y"
+                title="Ironfront Express - Gameplay Music"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+
+          <article class="carousel-slide" data-carousel-slide data-title="VUG — From Cave To Stars">
+            <div class="carousel-video">
+              <iframe
+                src="https://player.vimeo.com/video/1239231178?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                title="VUG - From Cave To Stars - Trailer with Gameplay Music"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+        </div>
+
+        <button class="carousel-arrow carousel-arrow-right" type="button" data-carousel-next aria-label="Next featured video">›</button>
+      </div>
+
+      <div class="carousel-dots" aria-label="Featured video selection">
+        <button type="button" data-carousel-dot="0" aria-label="Show Ironfront Express video 1"></button>
+        <button type="button" data-carousel-dot="1" aria-label="Show HellPunk: Purgatorium"></button>
+        <button type="button" data-carousel-dot="2" aria-label="Show Ironfront Express video 2"></button>
+        <button type="button" data-carousel-dot="3" aria-label="Show VUG - From Cave To Stars"></button>
+      </div>
+    </section>
+
+    <div class="social-links home-social-links">
+      <a href="https://www.youtube.com/@Ame_OST" target="_blank" rel="noopener noreferrer" class="social-button" title="YouTube">
+        <img src="assets/images/Youtube_logo.png" alt="YouTube">
+      </a>
+      <a href="https://www.instagram.com/amedeomarini_music/" target="_blank" rel="noopener noreferrer" class="social-button" title="Instagram">
+        <img src="assets/images/Instagram-Icon.png" alt="Instagram">
+      </a>
+      <button type="button" class="social-button" data-copy-discord title="Copy Discord username">
+        <img src="assets/images/dcord icon.png" alt="Discord">
+      </button>
+      <a href="mailto:hello@amedeomarini.com" class="social-button" title="Email">
+        <img src="assets/images/email icon no bg.png" alt="Email">
+      </a>
+    </div>
+
+    <div class="portfolio-buttons" id="portfolio">
+      <a class="portfolio-button cyberpunk" href="cyberpunkscifi.html"><span>CYBERPUNK — SCI-FI</span></a>
+      <a class="portfolio-button fantasy" href="fantasymusic.html"><span>FANTASY — EPIC</span></a>
+      <a class="portfolio-button chill" href="chillandintrospective.html"><span>CHILL — INTROSPECTIVE</span></a>
+    </div>
+  </main>
+
+  <section class="home-contact" id="contact">
+    <div class="footer-social-links">
+      <button type="button" class="social-button" data-copy-discord title="Copy Discord username">
+        <img src="assets/images/dcord icon.png" alt="Discord">
+      </button>
+      <a href="mailto:hello@amedeomarini.com" class="social-button" title="Email">
+        <img src="assets/images/email icon no bg.png" alt="Email">
+      </a>
+    </div>
+
+    <div class="contact-details">
+      <p>Email: <a href="mailto:hello@amedeomarini.com">hello@amedeomarini.com</a></p>
+      <p>Discord: <button type="button" class="contact-copy" data-copy-discord>@amepulses</button></p>
+    </div>
+
+    <div class="contact-card">
+      <h2>Get in Touch</h2>
+      <p>Feel free to contact me to see if your project is a fit. I am looking forward to working together!</p>
+      <p>You can also DM me on Discord (@amepulses) for quicker replies and to set up a call.</p>
+      <p>If you are curious about my other projects, you can find out more in the <a href="about.html">About section</a>.</p>
+      <button type="button" class="red-button contact-trigger">GET IN TOUCH</button><br>
+      <a class="back-top-button" href="#top">JUMP BACK TO THE TOP</a>
+    </div>
+  </section>
+
+  <div class="contact-modal" id="contactModal" hidden>
+    <div class="contact-modal-panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+      <button type="button" class="contact-modal-close" data-close-contact aria-label="Close contact options">×</button>
+      <h2 id="contactModalTitle">Get in Touch</h2>
+      <p>Choose the quickest way to reach me.</p>
+      <div class="contact-options">
+        <a class="contact-option" href="mailto:hello@amedeomarini.com">Email</a>
+        <button type="button" class="contact-option" data-copy-discord>Discord</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="site.js?v=6"></script>
+</body>
+</html>

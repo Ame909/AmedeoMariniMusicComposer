@@ -97,12 +97,13 @@ a {
 
 .intro {
   margin-bottom: 24px;
+  text-align: center;
 }
 
 .intro h1 {
   margin: 0;
-  font-size: clamp(36px, 5vw, 58px);
-  letter-spacing: -1.5px;
+  font-size: clamp(31px, 4.25vw, 49px);
+  letter-spacing: -1.2px;
   font-weight: 700;
 }
 
@@ -110,6 +111,7 @@ a {
   margin-top: 7px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.55);
+  text-align: center;
 }
 
 /* -------------------- */
@@ -122,17 +124,18 @@ a {
 
 .featured-label {
   margin: 0 0 10px;
-  color: rgba(255, 255, 255, 0.62);
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 12px;
   font-weight: 700;
+  text-align: center;
 }
 
 .featured-carousel {
   position: relative;
   width: 100%;
-  height: clamp(250px, 30vw, 350px);
+  height: clamp(220px, 26vw, 280px);
   outline: none;
 }
 
@@ -151,7 +154,7 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(650px, 72vw);
+  width: min(580px, 68vw);
   aspect-ratio: 16 / 9;
   opacity: 0;
   pointer-events: none;
