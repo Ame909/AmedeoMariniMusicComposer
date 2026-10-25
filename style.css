@@ -91,25 +91,182 @@ a {
 .landing {
   width: min(1100px, 90%);
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 38px;
+  padding-bottom: 70px;
 }
 
 .intro {
-  margin-bottom: 60px;
+  margin-bottom: 24px;
 }
 
 .intro h1 {
   margin: 0;
-  font-size: clamp(38px, 7vw, 80px);
-  letter-spacing: -2px;
+  font-size: clamp(36px, 5vw, 58px);
+  letter-spacing: -1.5px;
   font-weight: 700;
 }
 
 .intro p {
-  margin-top: 10px;
-  font-size: 17px;
+  margin-top: 7px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.55);
+}
+
+/* -------------------- */
+/* FEATURED MUSIC CAROUSEL */
+/* -------------------- */
+
+.featured-music {
+  margin-bottom: 18px;
+}
+
+.featured-label {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.62);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.featured-carousel {
+  position: relative;
+  width: 100%;
+  height: clamp(250px, 30vw, 350px);
+  outline: none;
+}
+
+.featured-carousel:focus-visible {
+  outline: 1px solid rgba(255, 255, 255, 0.45);
+  outline-offset: 5px;
+}
+
+.carousel-stage {
+  position: absolute;
+  inset: 0 46px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(650px, 72vw);
+  aspect-ratio: 16 / 9;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.78);
+  transition: transform 0.38s ease, opacity 0.38s ease, filter 0.38s ease;
+  filter: brightness(0.55);
+}
+
+.carousel-slide.is-active {
+  z-index: 3;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  filter: brightness(1);
+}
+
+.carousel-slide.is-prev {
+  z-index: 2;
+  opacity: 0.42;
+  pointer-events: auto;
+  cursor: pointer;
+  transform: translate(-128%, -50%) scale(0.84);
+}
+
+.carousel-slide.is-next {
+  z-index: 2;
+  opacity: 0.42;
+  pointer-events: auto;
+  cursor: pointer;
+  transform: translate(28%, -50%) scale(0.84);
+}
+
+.carousel-slide:not(.is-active) iframe {
+  pointer-events: none;
+}
+
+.carousel-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #050505;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.carousel-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 6;
+  width: 42px;
+  height: 66px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(8, 4, 5, 0.82);
+  color: white;
+  font-size: 42px;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background: rgba(128, 20, 27, 0.92);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.carousel-arrow-left {
+  left: 0;
+}
+
+.carousel-arrow-right {
+  right: 0;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 7px;
+}
+
+.carousel-dots button {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.carousel-dots button.is-active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.home-social-links {
+  gap: 22px;
+  margin: 14px 0 24px;
+}
+
+.home-social-links .social-button {
+  width: 38px;
+  height: 38px;
 }
 
 /* -------------------- */
@@ -119,7 +276,7 @@ a {
 .portfolio-buttons {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 
 .portfolio-button {
@@ -748,7 +905,7 @@ a {
     max-height: 62px;
   }
 
-  .landing {
+.landing {
     padding-top: 50px;
   }
 

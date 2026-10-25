@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amedeo Marini — Composer</title>
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body id="top">
 
@@ -38,7 +38,78 @@
       <p>Composer for games and interactive media</p>
     </div>
 
-    <div class="social-links">
+    <section class="featured-music" aria-labelledby="featuredMusicTitle">
+      <p class="featured-label" id="featuredMusicTitle">Featured Game Music</p>
+
+      <div class="featured-carousel" id="featuredCarousel" tabindex="0" aria-label="Featured game music carousel">
+        <button class="carousel-arrow carousel-arrow-left" type="button" data-carousel-prev aria-label="Previous featured video">‹</button>
+
+        <div class="carousel-stage">
+          <article class="carousel-slide" data-carousel-slide data-title="Legends of The Verdant Front — Ironfront Express">
+            <div class="carousel-video">
+              <iframe
+                src="https://player.vimeo.com/video/1221104346?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                title="Legends of The Verdant Front - Ironfront Express OST - Amedeo Marini"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+
+          <article class="carousel-slide" data-carousel-slide data-title="HellPunk: Purgatorium">
+            <div class="carousel-video">
+              <iframe
+                src="https://player.vimeo.com/video/1239229435?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                title="HellPunk: Purgatorium - Gameplay Snippet with music"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+
+          <article class="carousel-slide" data-carousel-slide data-title="Ironfront Express — Gameplay Music">
+            <div class="carousel-video">
+              <iframe
+                src="https://www.youtube.com/embed/N-fIZf8-gEE?si=OeRXZZrayePtnw5Y"
+                title="Ironfront Express - Gameplay Music"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+
+          <article class="carousel-slide" data-carousel-slide data-title="VUG — From Cave To Stars">
+            <div class="carousel-video">
+              <iframe
+                src="https://player.vimeo.com/video/1239231178?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                title="VUG - From Cave To Stars - Trailer with Gameplay Music"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </article>
+        </div>
+
+        <button class="carousel-arrow carousel-arrow-right" type="button" data-carousel-next aria-label="Next featured video">›</button>
+      </div>
+
+      <div class="carousel-dots" aria-label="Featured video selection">
+        <button type="button" data-carousel-dot="0" aria-label="Show Ironfront Express video 1"></button>
+        <button type="button" data-carousel-dot="1" aria-label="Show HellPunk: Purgatorium"></button>
+        <button type="button" data-carousel-dot="2" aria-label="Show Ironfront Express video 2"></button>
+        <button type="button" data-carousel-dot="3" aria-label="Show VUG - From Cave To Stars"></button>
+      </div>
+    </section>
+
+    <div class="social-links home-social-links">
       <a href="https://www.youtube.com/@Ame_OST" target="_blank" rel="noopener noreferrer" class="social-button" title="YouTube">
         <img src="assets/images/Youtube_logo.png" alt="YouTube">
       </a>
@@ -96,6 +167,7 @@
       </div>
     </div>
   </div>
-  <script src="site.js?v=5"></script>
+
+  <script src="site.js?v=6"></script>
 </body>
 </html>
