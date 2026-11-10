@@ -338,6 +338,12 @@ a {
   background-position: center;
 }
 
+.horror {
+  background:
+    radial-gradient(circle at 72% 38%, rgba(172, 18, 30, 0.42), transparent 34%),
+    linear-gradient(115deg, #090304 0%, #2a070b 48%, #650d16 100%);
+}
+
 /* -------------------- */
 /* SITE HEADER */
 /* -------------------- */

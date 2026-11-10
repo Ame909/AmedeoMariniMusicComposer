@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psychological Horror — Amedeo Marini</title>
+  <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">
+      <img src="assets/images/AM-logo.png" alt="Amedeo Marini Music">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gamedevelopment.html">Game Development</a>
+      <button type="button" class="contact-trigger">Get in Touch</button>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gamedevelopment.html">Game Development</a>
+    <button type="button" class="contact-trigger">Get in Touch</button>
+  </div>
+  <header class="page-header">
+    <a href="index.html" class="small-button">← Back to Lobby</a>
+    <button type="button" class="small-button contact-trigger">Get in Touch</button>
+  </header>
+  <main class="content-page">
+    <div class="page-title"><p>Selected Work</p><h1>PSYCHOLOGICAL HORROR</h1></div>
+    <div class="samply-wrapper"><iframe src="https://samply.app/embed/NldxYoWfPsOxaDShL085" frameborder="0" allowtransparency="true" style="width: 100%; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.12)"></iframe></div>
+    <div class="page-social-links">
+      <a href="https://www.youtube.com/@Ame_OST" target="_blank" rel="noopener noreferrer" class="social-button" title="YouTube">
+        <img src="assets/images/Youtube_logo.png" alt="YouTube">
+      </a>
+      <a href="https://www.instagram.com/amedeomarini_music/" target="_blank" rel="noopener noreferrer" class="social-button" title="Instagram">
+        <img src="assets/images/Instagram-Icon.png" alt="Instagram">
+      </a>
+      <button type="button" class="social-button" data-copy-discord title="Copy Discord username">
+        <img src="assets/images/dcord icon.png" alt="Discord">
+      </button>
+      <a href="mailto:hello@amedeomarini.com" class="social-button" title="Email">
+        <img src="assets/images/email icon no bg.png" alt="Email">
+      </a>
+    </div>
+  </main>
+  <div class="contact-modal" id="contactModal" hidden>
+    <div class="contact-modal-panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+      <button type="button" class="contact-modal-close" data-close-contact aria-label="Close contact options">×</button>
+      <h2 id="contactModalTitle">Get in Touch</h2>
+      <p>Choose the quickest way to reach me.</p>
+      <div class="contact-options">
+        <a class="contact-option" href="mailto:hello@amedeomarini.com">Email</a>
+        <button type="button" class="contact-option" data-copy-discord>Discord</button>
+      </div>
+    </div>
+  </div>
+  <script src="site.js?v=5"></script>
+</body>
+</html>
